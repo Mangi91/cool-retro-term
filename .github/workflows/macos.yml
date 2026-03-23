@@ -15,9 +15,9 @@ jobs:
 
     - name: Install dependencies
       run: |
-        brew install qt@5
-        brew link qt@5 --force
-        echo "/opt/homebrew/opt/qt@5/bin" >> "$GITHUB_PATH"
+        brew install qt@6
+        brew link qt@6 --force
+        echo "/opt/homebrew/opt/qt@6/bin" >> "$GITHUB_PATH"
     - name: Build project
       run: |
         qmake -config release
